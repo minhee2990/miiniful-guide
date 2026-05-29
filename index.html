@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인테리어 마감재 샘플 무료로 받는 법 | miiniful.home</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFFDF9;
+    --bark: #3D2B1F;
+    --bark-light: #6B4C3B;
+    --sand: #C9B49A;
+    --sand-light: #E8DDD1;
+    --sage: #7A8C6E;
+    --sage-light: #B8C9A9;
+    --sage-bg: #EEF2EA;
+    --gold: #B8963E;
+    --gold-light: #F5EDD6;
+    --text: #2C1F14;
+    --text-muted: #8C7B6E;
+    --border: #E2D8CE;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  .hero {
+    background: var(--bark);
+    color: var(--cream);
+    padding: 64px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,180,154,0.15);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; right: -30px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,180,154,0.1);
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sand);
+    border: 1px solid rgba(201,180,154,0.4);
+    padding: 5px 16px;
+    border-radius: 99px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(22px, 5vw, 32px);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: var(--warm-white);
+  }
+
+  .hero p {
+    font-size: 14px;
+    color: var(--sand);
+    max-width: 480px;
+    margin: 0 auto 12px;
+    line-height: 1.8;
+  }
+
+  .hero-brand {
+    font-size: 12px;
+    color: rgba(201,180,154,0.6);
+    letter-spacing: 0.1em;
+    margin-top: 24px;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+
+  .intro-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin: 32px 0 24px;
+    position: relative;
+  }
+
+  .intro-card p {
+    font-size: 14px;
+    color: var(--bark-light);
+    line-height: 1.9;
+  }
+
+  .intro-card .tip {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: var(--gold-light);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    font-size: 13px;
+    color: var(--bark);
+  }
+
+  .disclaimer {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 10px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+  }
+
+  .toc {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .toc-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .toc-list li a {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--bark-light);
+    text-decoration: none;
+    padding: 5px 14px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    transition: all 0.2s;
+  }
+
+  .toc-list li a:hover {
+    background: var(--bark);
+    color: var(--cream);
+    border-color: var(--bark);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 48px 0 20px;
+  }
+
+  .section-header .line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-header .label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .brand-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .brand-card-header {
+    padding: 20px 24px 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand-name {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--bark);
+    margin-bottom: 4px;
+  }
+
+  .brand-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 400;
+  }
+
+  .badge-free { background: var(--sage-bg); color: var(--sage); border: 1px solid var(--sage-light); }
+  .badge-offline { background: var(--gold-light); color: var(--gold); border: 1px solid #E5D5A3; }
+  .badge-both { background: var(--sage-bg); color: var(--sage); border: 1px solid var(--sage-light); }
+
+  .brand-card-body { padding: 20px 24px; }
+
+  .info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--sand-light);
+    font-size: 13.5px;
+  }
+
+  .info-row:last-of-type { border-bottom: none; }
+
+  .info-key {
+    color: var(--text-muted);
+    min-width: 100px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .info-val {
+    color: var(--text);
+    flex: 1;
+    line-height: 1.6;
+  }
+
+  .info-val a {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--sage-light);
+    padding-bottom: 1px;
+    transition: all 0.2s;
+  }
+
+  .info-val a:hover {
+    color: var(--bark);
+    border-color: var(--bark);
+  }
+
+  .tip-box {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: var(--cream);
+    border-left: 3px solid var(--sage);
+    border-radius: 0 8px 8px 0;
+    font-size: 13px;
+    color: var(--bark-light);
+    line-height: 1.8;
+  }
+
+  .tip-box strong {
+    color: var(--sage);
+    font-weight: 500;
+  }
+
+  .warn-box {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: var(--gold-light);
+    border-radius: 8px;
+    font-size: 12.5px;
+    color: var(--bark-light);
+  }
+
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+
+  .price-table th {
+    background: var(--cream);
+    color: var(--text-muted);
+    font-weight: 400;
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid var(--border);
+    font-size: 12px;
+  }
+
+  .price-table td {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  .price-table td a {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .price-table tr:last-child td { background: var(--warm-white); }
+
+  .link-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--bark);
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 7px 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .link-btn:hover {
+    background: var(--bark);
+    color: var(--cream);
+    border-color: var(--bark);
+  }
+
+  .link-btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    background: var(--bark);
+    color: var(--sand);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .footer strong {
+    display: block;
+    font-size: 13px;
+    color: var(--cream);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .footer p { color: rgba(201,180,154,0.7); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">Interior Guide</div>
+  <h1>인테리어 마감재 샘플<br>무료로 받는 법</h1>
+  <p>벽지 · 필름 브랜드별 샘플 신청 방법<br>쇼룸 위치부터 온라인 신청까지 총정리</p>
+  <div class="hero-brand">by miiniful.home</div>
+</div>
+
+<div class="container">
+
+  <div class="intro-card">
+    <p>인생에서 가장 비싼 쇼핑인 집을 구매했는데, 얼마나 실패 없이 성공적으로 인테리어를 하고 싶었는지 몰라요. 2개월 고생하며 진행했는데 누군가에게 도움이 되고 싶어서 정리했어요 💗</p>
+    <div class="tip">
+      💡 <strong>꼭 기억하세요!</strong> 샘플은 반드시 우리 집 조명 아래에서 확인하세요. 화면이나 쇼룸 조명과 실물 색감이 다를 수 있어요.
+    </div>
+  </div>
+
+  <div class="disclaimer">* 모든 유료 업체는 저와 아무 관계없고, 내돈내산으로 이용했습니다 *</div>
+
+  <div class="toc">
+    <div class="toc-title">목차</div>
+    <ul class="toc-list">
+      <li><a href="#lx">LX하우시스 디아망 벽지</a></li>
+      <li><a href="#gn">개나리 프리모 벽지</a></li>
+      <li><a href="#hansol">한솔 필름</a></li>
+      <li><a href="#hyundai">현대보닥 필름</a></li>
+      <li><a href="#younglim">영림 필름</a></li>
+      <li><a href="#kcc">KCC 필름</a></li>
+    </ul>
+  </div>
+
+  <!-- 벽지 섹션 -->
+  <div class="section-header">
+    <div class="line"></div>
+    <div class="label">🟡 벽지</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="brand-card" id="lx">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">LX하우시스 지인스퀘어</div>
+        <div class="brand-sub">디아망 벽지</div>
+      </div>
+      <span class="badge badge-offline">쇼룸 방문</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">쇼룸 방문</span>
+        <span class="info-val">전국 지인스퀘어 매장 (방문 시 무료 수령)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">배송 샘플</span>
+        <span class="info-val">별도 구매 필요 (유료)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 샘플북</span>
+        <span class="info-val"><a href="https://zincatalog.com/productList" target="_blank">zincatalog.com 바로가기 →</a></span>
+      </div>
+
+      <div class="tip-box">
+        <strong>miiniful tip</strong><br>
+        인기가 워낙 많아서 샘플이 품절된 경우도 있어요. 꼭 전화로 먼저 문의하고 방문하세요!
+      </div>
+
+      <p style="font-size:13px; color:var(--text-muted); margin-top:16px; margin-bottom:8px;">유료 샘플 구매 가능한 곳</p>
+      <table class="price-table">
+        <thead>
+          <tr><th>사이트</th><th>가격</th><th>추천 상황</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://sample.bjchango.com/product-detail/14306" target="_blank">샘플창고</a></td>
+            <td>1종 1,000원 + 배송 3,000원</td>
+            <td>개별로 필요할 때</td>
+          </tr>
+          <tr>
+            <td><a href="https://wallplan.co.kr/goods/goods_view.php?inflow=naverPay&goodsNo=1000021436" target="_blank">월플랜</a></td>
+            <td>8종 2,000원 + 배송 4,000원</td>
+            <td>다 비교하고 싶을 때</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="brand-card" id="gn">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">개나리벽지</div>
+        <div class="brand-sub">프리모 벽지</div>
+      </div>
+      <span class="badge badge-free">무료 배송</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">쇼룸 위치</span>
+        <span class="info-val">서울 서초구 서초중앙로8길 123<br><a href="https://naver.me/Fx22dTDE" target="_blank">네이버 지도 보기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">무료 배송</span>
+        <span class="info-val"><a href="http://www.gniwallpaper.com/contact/sample.php?b_id=025" target="_blank">샘플 신청 바로가기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 샘플북</span>
+        <span class="info-val"><a href="http://www.gniwallpaper.com/samplebook/samplebook_list.php?b_id=023" target="_blank">샘플북 바로가기 →</a></span>
+      </div>
+      <div class="warn-box">
+        ⚠️ 1인 1회 무료 배송 / 월·목 주 2회 발송 / 실크벽지 한해 최대 2개 패키지 신청 가능
+      </div>
+    </div>
+  </div>
+
+  <!-- 필름 섹션 -->
+  <div class="section-header">
+    <div class="line"></div>
+    <div class="label">🟢 필름</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="brand-card" id="hansol">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">한솔 필름</div>
+        <div class="brand-sub">한솔홈데코</div>
+      </div>
+      <span class="badge badge-offline">쇼룸 방문</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">쇼룸 (서울)</span>
+        <span class="info-val">서울 구로구 디지털로31길 61 드림마크원 1층</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 카탈로그</span>
+        <span class="info-val"><a href="https://www.hansolhomedeco.co.kr/home/customer/cus06_catalog.jsp" target="_blank">카탈로그 바로가기 →</a></span>
+      </div>
+      <div class="tip-box">
+        <strong>miiniful tip</strong><br>
+        쇼룸에 조명별로 샘플을 비교할 수 있는 조명이 마련되어 있어요. 벽지 샘플을 먼저 챙겨서 같이 가져가면 훨씬 좋아요 👍<br><br>
+        당장 다음날까지 결정해야 했을 때 개인문의 남기면 퀵으로 배송도 가능해요! 참고로 카카오T로 직접 부르는 게 더 저렴해요 ㅎㅎ
+      </div>
+      <p style="font-size:13px; color:var(--text-muted); margin-top:20px; margin-bottom:8px;">🛒 유료 샘플 구매 가능한 곳</p>
+      <table class="price-table">
+        <thead>
+          <tr><th>사이트</th><th>가격</th><th>추천 상황</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://smartstore.naver.com/qspace_f/products/11675010157" target="_blank">QSPACE</a></td>
+            <td>1종 890원 + 배송 3,000원</td>
+            <td>퀵 배송 필요할 때 🚛</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="brand-card" id="hyundai">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">현대보닥 필름</div>
+        <div class="brand-sub">현대L&C</div>
+      </div>
+      <span class="badge badge-free">무료 배송</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">무료 배송</span>
+        <span class="info-val"><a href="https://m.ebodaq.com/Community/Inquiry/RequestSample" target="_blank">샘플 신청 바로가기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 샘플북</span>
+        <span class="info-val"><a href="https://m.ebodaq.com/Product/Product/List?pattern=&gloss=&color=&listType=0&searchText=&sortOrder=2" target="_blank">샘플북 바로가기 →</a></span>
+      </div>
+      <div class="warn-box">
+        ⚠️ 샘플 A4 사이즈 / 1인 최대 5종 신청 가능 / 월 3회까지 무료 우편
+      </div>
+    </div>
+  </div>
+
+  <div class="brand-card" id="younglim">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">영림 필름</div>
+        <div class="brand-sub">영림홈앤리빙</div>
+      </div>
+      <span class="badge badge-both">무료배송 + 쇼룸</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">쇼룸 (강남)</span>
+        <span class="info-val">서울 강남구 테헤란로 108 영림빌딩<br><a href="https://naver.me/5FDDx0Nh" target="_blank">네이버 지도 보기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">쇼룸 (송파)</span>
+        <span class="info-val">서울 송파구 송파대로 111 파크하비오 205동</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">쇼룸 (인천)</span>
+        <span class="info-val">인천 남동구 아암대로 1085</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">무료 배송</span>
+        <span class="info-val"><a href="https://ylfilm.co.kr/sample/" target="_blank">샘플 신청 바로가기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 샘플북</span>
+        <span class="info-val"><a href="https://www.ylfilm.co.kr/static/pages/2526ebook/index.html" target="_blank">샘플북 바로가기 →</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="brand-card" id="kcc">
+    <div class="brand-card-header">
+      <div>
+        <div class="brand-name">KCC 필름</div>
+        <div class="brand-sub">homecc</div>
+      </div>
+      <span class="badge badge-free">무료 배송</span>
+    </div>
+    <div class="brand-card-body">
+      <div class="info-row">
+        <span class="info-key">쇼룸 위치</span>
+        <span class="info-val">경기 수원시 권선구 세화로134번길 31</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">무료 배송</span>
+        <span class="info-val"><a href="https://www.homecc.com/partner/film_sample_apply.do" target="_blank">샘플 신청 바로가기 →</a></span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">디지털 샘플북</span>
+        <span class="info-val"><a href="https://homeccinteriorfilm.myportfolio.com/202324-homecc-interior-film" target="_blank">샘플북 바로가기 →</a></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <strong>Copyright ⓒ 미니풀홈 (miiniful.home). All rights reserved.</strong>
+  <p>본 자료의 저작권은 저작자 미니풀홈 (miiniful.home)에게 있습니다.</p>
+  <p>개인 참고용으로만 사용 가능하며, 저작권자의 사전 동의 없이</p>
+  <p>무단 복제 · 재배포 · 전송 · 대여 · 2차 가공 및 상업적 활용을 금합니다.</p>
+</div>
+
+</body>
+</html>
